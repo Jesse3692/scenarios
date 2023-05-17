@@ -1,8 +1,8 @@
 import pandas as pd
 
 from solution import load_dataset
-from solutions.explore_and_analyze_data import explore_and_analyze_data
-from solutions.handle_nan_values import handle_nan_values
+from explore_and_analyze_data import explore_and_analyze_data
+from handle_nan_values import handle_nan_values
 
 
 def handle_duplicate_data(df: pd.DataFrame) -> pd.DataFrame:
