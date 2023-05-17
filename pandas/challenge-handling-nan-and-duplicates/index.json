@@ -101,6 +101,10 @@
           "target": "/tmp"
         },
         {
+          "file": "solution.py",
+          "target": "/tmp"
+        },
+        {
           "file": "explore_and_analyze_data.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
