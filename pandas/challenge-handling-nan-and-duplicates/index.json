@@ -1,0 +1,144 @@
+{
+  "type": "challenge",
+  "title": "Handling NaN and Duplicate Data",
+  "description": "In this challenge, you will deal with a dataset containing missing (NaN) values and duplicate entries. ",
+  "difficulty": "Beginner",
+  "time": 60,
+  "details": {
+    "steps": [
+      {
+        "title": "Exploring and Analyzing the Dataset",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Determine percentage of missing data in each column.",
+            "file": "verify1.sh",
+            "hint": "Test error, Please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "pandas/head",
+          "pandas/describe",
+          "pandas/duplicated"
+        ],
+        "solutions": [
+          "explore_and_analyze_data.py"
+        ]
+      },
+      {
+        "title": "Handling Nan Values",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Remember to delete the corresponding rows after filling in the missing data.",
+            "file": "verify2.sh",
+            "hint": "Test error, Please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "pandas/fill_nan",
+          "pandas/dropna"
+        ],
+        "solutions": [
+          "handle_nan_values.py"
+        ]
+      },
+      {
+        "title": "Handling Duplicate Data",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Drop duplicate rows, keeping the first occurrence.",
+            "file": "verify3.sh",
+            "hint": "Test error, Please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "pandas/drop_duplicates"
+        ],
+        "solutions": [
+          "handle_duplicate_data.py"
+        ]
+      },
+      {
+        "title": "Merging and Analyzing Cleaned Data",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Merge the DataFrames.",
+            "file": "verify4.sh",
+            "hint": "Test error, Please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "pandas/merge",
+          "pandas/group_by"
+        ],
+        "solutions": [
+          "merge_and_analyze_data.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_*.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "explore_and_analyze_data.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "handle_duplicate_data.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "handle_nan_values.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "merge_and_analyze_data.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "solution.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "additional_data.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rw"
+        },
+        {
+          "file": "sales_data.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rw"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
