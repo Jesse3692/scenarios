@@ -1,9 +1,11 @@
 import pandas as pd
 from typing import Tuple
-from solution import load_dataset
 
 
-def explore_and_analyze_data(df: pd.DataFrame) -> Tuple[float]:
+from load_dataset import load_dataset
+
+
+def explore_and_analyze_data(df: pd.DataFrame) -> pd.Series:
     """Explore and analyze the dataset to obtain summary statistics and identify missing and duplicate values."""
     # Display first few rows
     print(df.head())
@@ -17,7 +19,6 @@ def explore_and_analyze_data(df: pd.DataFrame) -> Tuple[float]:
 
     # Determine percentage of missing data in each column
     missing_percentage = (missing_values / len(df)) * 100
-    print(missing_percentage)
 
     return missing_percentage
 

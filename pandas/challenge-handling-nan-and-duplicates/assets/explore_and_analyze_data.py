@@ -1,6 +1,6 @@
 import pandas as pd
 from typing import Tuple
-from solution import load_dataset
+from load_dataset import load_dataset
 
 
 def explore_and_analyze_data(df: pd.DataFrame) -> Tuple[float]:

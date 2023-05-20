@@ -2,7 +2,7 @@ import pandas as pd
 
 from handle_duplicate_data import handle_duplicate_data
 from handle_nan_values import handle_nan_values
-from solution import load_dataset
+from load_dataset import load_dataset
 
 
 def merge_and_analyze_data(df1: pd.DataFrame, df2: pd.DataFrame, key: str) -> pd.DataFrame:

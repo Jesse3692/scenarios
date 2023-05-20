@@ -4,3 +4,8 @@ transaction_id,customer_id,product_id,product_category,transaction_date,quantity
 3,101,501,Home & Garden,2021/5/2,3,29.99,5
 4,103,301,Electronics,2021/5/2,1,199.99,3.5
 5,104,301,Electronics,,1,199.99,4
+6,102,601,Beauty,2021/5/3,2,12.99,4.5
+7,105,501,Home & Garden,2021/5/4,4,24.99,3.5
+8,103,701,Furniture,2021/5/5,1,499.99,5
+9,101,402,Apparel,2021/5/6,2,39.99,4
+10,106,301,Electronics,2021/5/7,1,179.99,4.5

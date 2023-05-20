@@ -1,6 +1,6 @@
 import pandas as pd
 
-from solution import load_dataset
+from load_dataset import load_dataset
 
 
 def handle_nan_values(df: pd.DataFrame) -> pd.DataFrame:

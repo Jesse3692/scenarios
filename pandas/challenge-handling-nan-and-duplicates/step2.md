@@ -4,19 +4,28 @@ Now that you better understand the dataset, the next step is to handle the missi
 
 ## TODO
 
-1. Determine the most appropriate method for handling NaN values in each column (e.g., fill with a constant value, interpolate, drop rows or columns, etc.).
+1. Determine the most appropriate method for handling NaN values in each column (For example, if NaN values in a 'price' column indicate that the product was free, we could fill those values with 0).
 2. Implement your chosen methods to handle NaN values for each column.
 3. Verify that the NaN values have been handled correctly.
+
+Please complete the above functions in the `handle_nan_values.py` file handle_nan_values function.
 
 ## Example
 
 You can run the `handle_nan_values.py` file to verify the correctness of the code:
 
 ```zsh
-# python3 handle_nan_values.py
-#    transaction_id  customer_id  product_id  ... quantity   price  rating
-# 0               1          101         301  ...        2  199.99    4.50
-# 1               2          102         402  ...        1   49.99    4.25
-# 2               3          101         501  ...        3   29.99    5.00
-# 3               4          103         301  ...        1  199.99    3.50
+python3 handle_nan_values.py
+
+# Output:
+#    transaction_id  customer_id  product_id product_category transaction_date  quantity   price    rating
+# 0               1          101         301      Electronics         2021/5/1         2  199.99  4.500000
+# 1               2          102         402          Apparel         2021/5/1         1   49.99  4.277778
+# 2               3          101         501    Home & Garden         2021/5/2         3   29.99  5.000000
+# 3               4          103         301      Electronics         2021/5/2         1  199.99  3.500000
+# 5               6          102         601           Beauty         2021/5/3         2   12.99  4.500000
+# 6               7          105         501    Home & Garden         2021/5/4         4   24.99  3.500000
+# 7               8          103         701        Furniture         2021/5/5         1  499.99  5.000000
+# 8               9          101         402          Apparel         2021/5/6         2   39.99  4.000000
+# 9              10          106         301      Electronics         2021/5/7         1  179.99  4.500000
 ```

@@ -5,7 +5,7 @@ sys.path.append("/home/labex/project")
 import unittest
 import pandas as pd
 from pandas.testing import assert_frame_equal
-from solution import load_dataset
+from load_dataset import load_dataset
 from explore_and_analyze_data import explore_and_analyze_data
 
 

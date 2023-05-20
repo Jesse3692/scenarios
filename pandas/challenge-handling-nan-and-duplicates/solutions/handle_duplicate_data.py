@@ -1,6 +1,6 @@
 import pandas as pd
 
-from solution import load_dataset
+from load_dataset import load_dataset
 from explore_and_analyze_data import explore_and_analyze_data
 from handle_nan_values import handle_nan_values
 

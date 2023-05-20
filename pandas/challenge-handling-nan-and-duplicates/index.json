@@ -1,7 +1,7 @@
 {
   "type": "challenge",
   "title": "Handling NaN and Duplicate Data",
-  "description": "In this challenge, you will deal with a dataset containing missing (NaN) values and duplicate entries. ",
+  "description": "This topic covers techniques for detecting and handling missing (NaN) and duplicate data in pandas, including filling missing values and removing duplicates.",
   "difficulty": "Beginner",
   "time": 60,
   "details": {
